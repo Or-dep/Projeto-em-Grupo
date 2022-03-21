@@ -72,8 +72,28 @@ Se o aluno não existir no dicionário, deve retornar o dicionário sem alteraç
 '''
 
 
-def excluir_nota(alunos, nome): #4 #murilo
-    pass
+def excluir_nota(alunos, nome): #4 #murillo
+    alunos = {
+        'Augusto': [4.5, 7.0, 6.0, 3.0],
+        'Denise': [9.0, 8.5],
+        'Ana Paula': [3.5, 1.0, 6.5],
+        'Marcelo': [9.0, 10.0, 7.0, 7.0]
+    }
+
+    # printing original list
+    print("The original list is : " + str(alunos))
+
+    nome = input("Escreva o nome do aluno")
+
+    # using del + loop
+    # to delete dictionary in list
+    for i in range(len(alunos)):
+        if alunos[string(i)[1]] == nome:
+            del alunos[i][1]
+            break
+
+    # printing result
+    print("List after deletion of dictionary : " + str(alunos))
 
 
 '''
