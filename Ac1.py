@@ -84,5 +84,15 @@ de cada aluno.
 '''
 
 
-def maior_nota(alunos): #5 #pedro
-    pass
+def maior_nota(alunos): # 5 #pedro
+    sala = alunos.copy()
+    lt = list()
+    for c in sala.values():
+        x = max(c)
+        lt.append(x)
+    ct = 0
+    for y in sala.keys():
+        sala[y] = lt[ct]
+        ct += 1
+    print(sala)
+    return sala
