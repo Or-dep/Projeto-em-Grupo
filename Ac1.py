@@ -80,17 +80,17 @@ def excluir_nota(alunos, nome): #4 #murillo
         'Marcelo': [9.0, 10.0, 7.0, 7.0]
     }
 
-    # printing original list
-    print("The original list is : " + str(alunos))
-
-    nome = input("Escreva o nome do aluno")
+    nome = "Augusto"
 
     # using del + loop
     # to delete dictionary in list
-    for i in range(len(alunos)):
-        if alunos[string(i)[1]] == nome:
-            del alunos[i][1]
-            break
+    for aluno in alunos:
+        if str(aluno) == nome:
+            print(aluno)
+            print(aluno)
+
+        #    del alunos[i][0].pop
+        #    break
 
     # printing result
     print("List after deletion of dictionary : " + str(alunos))
