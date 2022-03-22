@@ -59,8 +59,20 @@ Caso nenhum aluno seja reprovado, deve retornar uma lista vazia.
 '''
 
 
-def reprovados(alunos): #3 #well
-    pass
+alunos = {'Augusto': [4.5, 7.0, 6.0, 1.0],
+          'Denise': [9.0, 8.5],
+          'Ana Paula': [3.5, 10.0, 6.5],
+          'Marcelo': [9.0, 1.0, 7.0, 7.0]}
+
+def reprovados(alunos):
+    Alunos_rep = []
+    for i in alunos:
+        if sum(alunos[i])/len(alunos[i]) < 6:
+            Alunos_rep.append(i) 
+    return Alunos_rep
+
+resultado = reprovados(alunos)			
+print(resultado)
 
 
 '''
